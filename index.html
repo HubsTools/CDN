@@ -1,16 +1,6 @@
-svg(viewBox="0 0 600 300")
-  // Symbol
-  symbol#s-text
-    text(text-anchor="middle", x="50%", y="50%", dy=".35em")
-      | CDN
-  // Duplicate symbols
-  use.text(xlink:href="#s-text")
-  use.text(xlink:href="#s-text")
-  use.text(xlink:href="#s-text")
-  use.text(xlink:href="#s-text")
-  use.text(xlink:href="#s-text")
-
-<style>
+<html>
+  
+  <style>
   
   $colors: #F2385A, #F5A503, #E9F1DF, #56D9CD, #3AA1BF;
 $max: length($colors);
@@ -74,3 +64,19 @@ svg {
 }
   
 </style>
+
+svg(viewBox="0 0 600 300")
+  // Symbol
+  symbol#s-text
+    text(text-anchor="middle", x="50%", y="50%", dy=".35em")
+      | CDN
+  // Duplicate symbols
+  use.text(xlink:href="#s-text")
+  use.text(xlink:href="#s-text")
+  use.text(xlink:href="#s-text")
+  use.text(xlink:href="#s-text")
+  use.text(xlink:href="#s-text")
+
+
+  
+</html>
