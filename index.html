@@ -2,56 +2,62 @@
   
   <style>
   
-  $colors: #F2385A, #F5A503, #E9F1DF, #56D9CD, #3AA1BF;
-$max: length($colors);
-$dash: 70;
-$dash-gap: 10;
-$dash-space: $dash * ($max - 1) + $dash-gap * $max;
-$time: 6s;
-$time-step: $time/$max;
-
-/* Main styles */
+ /* Main styles */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
-
 .text {
   fill: none;
   stroke-width: 3;
   stroke-linejoin: round;
-  stroke-dasharray: $dash $dash-space;
+  stroke-dasharray: 70 330;
   stroke-dashoffset: 0;
-  -webkit-animation: stroke $time infinite linear;
-  animation: stroke $time infinite linear;
-  
-  @for $item from 1 through $max {
-    &:nth-child(#{$max}n + #{$item}) {
-      $color: nth($colors, $item);
-      stroke: $color;
-      -webkit-animation-delay: -($time-step * $item);
-      animation-delay: -($time-step * $item);
-    }
-  }
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+.text:nth-child(5n + 1) {
+  stroke: #f2385a;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #f5a503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+.text:nth-child(5n + 3) {
+  stroke: #e9f1df;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+.text:nth-child(5n + 4) {
+  stroke: #56d9cd;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+.text:nth-child(5n + 5) {
+  stroke: #3aa1bf;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
 }
 
 @-webkit-keyframes stroke {
   100% {
-    stroke-dashoffset: -($dash + $dash-gap) * $max;
+    stroke-dashoffset: -400;
   }
 }
-
 @keyframes stroke {
   100% {
-    stroke-dashoffset: -($dash + $dash-gap) * $max;
+    stroke-dashoffset: -400;
   }
 }
-
 /* Other styles */
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
   background: #111;
-  background-size: .2em 100%;
+  background-size: 0.2em 100%;
   font: 5em/1 Open Sans, Impact;
   text-transform: uppercase;
   margin: 0;
@@ -62,21 +68,23 @@ svg {
   width: 100%;
   height: 100%;
 }
+
   
 </style>
 
-svg(viewBox="0 0 600 300")
-  // Symbol
-  symbol#s-text
-    text(text-anchor="middle", x="50%", y="50%", dy=".35em")
-      | CDN
-  // Duplicate symbols
-  use.text(xlink:href="#s-text")
-  use.text(xlink:href="#s-text")
-  use.text(xlink:href="#s-text")
-  use.text(xlink:href="#s-text")
-  use.text(xlink:href="#s-text")
 
+<svg viewBox="0 0 600 300">
+  <!-- Symbol-->
+  <symbol id="s-text">
+    <text text-anchor="middle" x="50%" y="50%" dy=".35em">CDN</text>
+  </symbol>
+  <!-- Duplicate symbols-->
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+  <use class="text" xlink:href="#s-text"></use>
+</svg>
 
   
 </html>
