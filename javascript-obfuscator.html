@@ -1,14 +1,14 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-<title>Home of online tools and utilities - Beautify Tools</title>
-<meta name="description" content="Useful online tools like Beautifiers, Minifiers, Converters, Utilities, Validators, Editors for users and developers."/>
+<title>Online Javascript Obfuscator - beautifytools.com</title>
+<meta name="description" content="Obfuscate javascript code using Online Javascript Obfuscator to make your javascript code nearly impossible to read or understand."/>
 <link rel="shortcut icon" href="img/favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all"/>
 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" media="all"/>
-<link rel="stylesheet" type="text/css" href="css/home.css" media="all"/></head>
+<link rel="stylesheet" type="text/css" href="css/javascript_obfuscator.css" media="all"/></head>
 <body>
 	<div class="header">
         <div class="container-fluid">
@@ -40,13 +40,62 @@
     </div>    <div class="container-fluid">
         <div class="row">
         	<div class="col-md-12 text-center">
-            	<h1>All Online Tools</h1>
+            	<h1>Javascript Obfuscator</h1>
             </div>
         </div>
         <div class="row">
-        	<div class="col-md-12 text-center">
-            	<p>Below a collection of free online tools that I have been using for a while. I've found them useful and I hope that other users and developers find them useful too. Thanks for visiting Beautify Tools.</p>
-            </div>
+        	<div class="col-md-6 col-md-offset-3 text-center">
+            	<p>Online Javascript Obfuscator makes javascript code harder to read or understand to protect from theft or reuse. It uses some algorithms and changes your code in a certain way so that it becomes nearly impossible to copy your code. The obfuscated javascript code works like normal code and it can be converted back to normal code at any time.</p>
+                <div class="well well-sm">
+                	<p class="info text-danger"></p>
+                	<form id="obfuscator_form" class="form-horizontal" action="#" method="post">
+                        <fieldset>
+                        <!-- Textarea -->
+                        <div class="form-group">
+                          <div class="col-md-12">                     
+                            <textarea style="height:250px;" class="form-control" id="src" name="src" placeholder="Enter your code here ..."></textarea>
+                          </div>
+                        </div>
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                          <div class="col-md-12">
+                            <select id="ascii_encoding" name="ascii_encoding" class="form-control">
+                              <option value="" >Select Encoding</option>
+                              <option value="0" >None</option>
+                              <option value="10" >Numeric</option>
+                              <option value="62" selected>Normal</option>
+                              <option value="95" >High ASCII</option>
+                            </select>
+                          </div>
+                        </div>
+                        <!-- Multiple Checkboxes -->
+                        <div class="form-group text-left">
+                          <div class="col-md-12">
+                          <div class="checkbox">
+                            <label for="fast-decode">
+                              <input type="checkbox" name="fast_decode" id="fast-decode" value="fast-decode" checked>
+                              Fast Decode
+                            </label>
+                            </div>
+                          <div class="checkbox">
+                            <label for="special-char">
+                              <input type="checkbox" name="special_char" id="special-char" value="special-char" >
+                              Special Characters
+                            </label>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                          <div class="col-md-12">
+                            <button id="obfuscate" name="obfuscate" class="btn btn-success">Obfuscate</button>
+                            <button id="clear" name="clear" class="btn btn-danger">Clear</button>
+                          </div>
+                        </div>
+                        </fieldset>
+                	</form>
+                </div>
+                            </div>
         </div>
         <div class="row" id="all_tools">
             <div class="col-md-12">
@@ -214,7 +263,7 @@
                 </div>
             </div>
         </div>    </div>
-    <div class="footer">Â© 2019 beautifytools.com All Rights Reserved</div>
+    <div class="footer">© 2019 beautifytools.com All Rights Reserved</div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -224,6 +273,6 @@
   ga('send', 'pageview');
 </script>
 <script src="ajax/libs/jquery/2-1-4/jquery.min.js"></script>
-<script src="js/home.js"></script>
-<center><font size="2">This is the free demo result. For a full version of this website, please go to  <a href="https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/">https://www6.waybackmachinedownloader.com/website-downloader-online/scrape-all-files/</a></font></center></body>
+<script src="js/javascript_obfuscator.js"></script>
+</body>
 </html>
