@@ -1,1 +1,435 @@
+(function(e) {
+  function t(t) { for (var a, r, l = t[0], o = t[1], c = t[2], p = 0, u = []; p < l.length; p++) r = l[p], s[r] && u
+      .push(s[r][0]), s[r] = 0; for (a in o) Object.prototype.hasOwnProperty.call(o, a) && (e[a] = o[a]);
+    d && d(t); while (u.length) u.shift()(); return i.push.apply(i, c || []), n() }
 
+  function n() { for (var e, t = 0; t < i.length; t++) { for (var n = i[t], a = !0, l = 1; l < n.length; l++) { var
+          o = n[l];
+        0 !== s[o] && (a = !1) } a && (i.splice(t--, 1), e = r(r.s = n[0])) } return e } var a = {},
+    s = { app: 0 },
+    i = [];
+
+  function r(t) { if (a[t]) return a[t].exports; var n = a[t] = { i: t, l: !1, exports: {} }; return e[t].call(n
+      .exports, n, n.exports, r), n.l = !0, n.exports } r.m = e, r.c = a, r.d = function(e, t, n) { r.o(e, t) ||
+        Object.defineProperty(e, t, { enumerable: !0, get: n }) }, r.r = function(e) { "undefined" !== typeof Symbol
+        && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object
+        .defineProperty(e, "__esModule", { value: !0 }) }, r.t = function(e, t) { if (1 & t && (e = r(e)), 8 & t)
+        return e; if (4 & t && "object" === typeof e && e && e.__esModule) return e; var n = Object.create(null); if (
+        r.r(n), Object.defineProperty(n, "default", { enumerable: !0, value: e }), 2 & t && "string" != typeof e)
+        for (var a in e) r.d(n, a, function(t) { return e[t] }.bind(null, a)); return n }, r.n = function(e) { var t =
+        e && e.__esModule ? function() { return e["default"] } : function() { return e }; return r.d(t, "a", t), t },
+    r.o = function(e, t) { return Object.prototype.hasOwnProperty.call(e, t) }, r.p = "/beautify/"; var l = window[
+      "webpackJsonp"] = window["webpackJsonp"] || [],
+    o = l.push.bind(l);
+  l.push = t, l = l.slice(); for (var c = 0; c < l.length; c++) t(l[c]); var d = o;
+  i.push([0, "chunk-vendors"]), n() })({ 0: function(e, t, n) { e.exports = n("56d7") }, "56d7": function(e, t,
+  n) { "use strict";
+    n.r(t);
+    n("cadf"), n("551c"), n("f751"), n("097d"); var a = n("2b0e"),
+      s = function() { var e = this,
+          t = e.$createElement,
+          n = e._self._c || t; return n("div", { attrs: { id: "app" } }, [n("Beautifier")], 1) },
+      i = [],
+      r = function() { var e = this,
+          t = e.$createElement,
+          n = e._self._c || t; return n("main", { ref: "main", class: e.isDark ? "is-dark" : "is-light" }, [n(
+          "header", [e._m(0), n("nav", { staticClass: "nav-items" }, [n(
+          "el-button", { attrs: { type: "html" === e.mode ? "primary" : e.isDark ? "info" : "default",
+              round: "" }, on: { click: function(t) { e.mode = "html" } } }, [e._v(
+            "\n        HTML\n      ")]), n("el-button", { attrs: { type: "css" === e.mode ?
+                "primary" : e.isDark ? "info" : "default", round: "" }, on: { click: function(t) { e
+                  .mode = "css" } } }, [e._v("\n        CSS\n      ")]), n(
+          "el-button", { attrs: { type: "js" === e.mode ? "primary" : e.isDark ? "info" : "default",
+              round: "" }, on: { click: function(t) { e.mode = "js" } } }, [e._v(
+            "\n        JavaScript\n      ")]), n("el-popover", { ref: "settingsPopover",
+            attrs: { width: "460", placement: "bottom",
+            trigger: "click", "popper-class": "settings-popover" } }, [n(
+          "el-button", { attrs: { slot: "reference", type: e.isDark ? "info" : "default",
+              round: "" }, slot: "reference" }, [n(
+          "i", { staticClass: "el-icon-s-operation hidden-sm-and-down" }), e._v(
+            "\n          Settings\n          "), n("i", { staticClass: "el-icon-arrow-down" })]), n(
+            "el-form", [n("el-row", { staticClass: "settings-row", attrs: { gutter: 20 } }, [n(
+              "el-col", { attrs: { xs: 24, sm: 24, md: 12, lg: 12, xl: 12 } }, [n(
+              "el-switch", { attrs: { "active-text": "Dark theme" }, model: { value: e
+                    .isDark, callback: function(t) { e.isDark = t },
+                expression: "isDark" } }), n("br"), n(
+              "el-switch", { attrs: { "active-text": "Line numbers" }, model: { value: e
+                    .lineNumbers, callback: function(t) { e.lineNumbers = t },
+                  expression: "lineNumbers" } }), n("br"), n(
+              "el-switch", { attrs: { "active-text": "Wrap lines" }, model: { value: e
+                    .wrapLines, callback: function(t) { e.wrapLines = t },
+                  expression: "wrapLines" } }), n("br"), n(
+              "el-switch", { attrs: { "active-text": "Highlight brackets" },
+                model: { value: e.matchBrackets, callback: function(t) { e.matchBrackets =
+                      t }, expression: "matchBrackets" } }), n("br"), n(
+              "el-switch", { attrs: { "active-text": "Detect indent on paste" },
+                model: { value: e.detectIndent, callback: function(t) { e.detectIndent =
+                      t }, expression: "detectIndent" } }), n("br"), n(
+              "el-switch", { attrs: { disabled: !e
+                  .isCopySupported, "active-text": "Copy after cleaning" },
+                model: { value: e.copyOnClean, callback: function(t) { e.copyOnClean =
+                      t }, expression: "copyOnClean" } })], 1), n("el-col", { attrs: { xs: 24,
+                sm: 24, md: 12, lg: 12, xl: 12 } }, [n(
+            "el-form-item", { attrs: { label: "Font size" } }, [n(
+            "el-select", { attrs: { size: "small", placeholder: "" },
+              model: { value: e.fontSize, callback: function(t) { e.fontSize = t },
+                expression: "fontSize" } }, [n(
+            "el-option", { attrs: { label: "Small", value: 11 } }), n(
+            "el-option", { attrs: { label: "Medium", value: 13 } }), n(
+              "el-option", { attrs: { label: "Large", value: 15 } })], 1)], 1), n(
+              "el-form-item", { attrs: { label: "Indent" } }, [n(
+              "el-select", { attrs: { size: "small", placeholder: "" },
+                model: { value: e.indent, callback: function(t) { e.indent = t },
+                  expression: "indent" } }, [n("el-option", { attrs: { label: "Tabs",
+                  value: "tab" } }), n("el-option", { attrs: { label: "2 spaces",
+                  value: "2 sp" } }), n("el-option", { attrs: { label: "3 spaces",
+                  value: "3 sp" } }), n("el-option", { attrs: { label: "4 spaces",
+                  value: "4 sp" } })], 1)], 1), n(
+            "el-form-item", { attrs: { label: "Preferred line length" } }, [n(
+              "el-input", { attrs: { type: "number", size: "small", min: "0",
+                  max: "1000", step: "10" }, model: { value: e.ruler,
+                  callback: function(t) { e.ruler = t }, expression: "ruler" } })], 1), n(
+              "el-button", { attrs: { type: "text", size: "small" },
+                on: { click: function(t) { e.advancedSettingsVisible = !0, e.$refs
+                        .settingsPopover.doClose() } } }, [e._v(
+                "\n                Advanced Settings…\n              ")])], 1)], 1)], 1)], 1), n(
+            "el-button", { attrs: { type: e.isDark ? "info" : "default", round: "" },
+              on: { click: function(t) { e.aboutDialogVisible = !0 } } }, [e._v(
+              "\n        About\n      ")])], 1)]), n("div", { class: { editor: !0, "is-dark": e.isDark,
+              "is-dragging": e.isDragging }, style: { "font-size": e.fontSize + "px" } }, [n(
+        "div", { staticClass: "editor-wrap" }, [n("textarea", { ref: "textarea" })])]), n("footer", [n(
+        "div", { staticClass: "stats" }, [n("stat", { attrs: { label: "mode", dark: e.isDark,
+              value: this.mode.toUpperCase() } }), n("stat", { attrs: { label: "indent", dark: e.isDark,
+              value: this.indent } }), n("stat", { attrs: { label: "lines", dark: e.isDark, value: this
+                .lines } }), n("stat", { attrs: { label: "chars", dark: e.isDark, value: this
+              .charCount } }), n("stat", { attrs: { label: "size", dark: e.isDark, value: this
+              .size } })], 1), n("div", { staticClass: "credits" }, [n("span", [n(
+        "span", { staticClass: "hidden-lg-and-down" }, [e._v("Made possible by")]), n(
+        "a", { attrs: { href: "https://www.surrealcms.com/", target: "_blank" } }, [n(
+        "img", { attrs: { src: e.isDark ?
+              "https://www.surrealcms.com/assets/img/wordmark-dark.svg" : "https://www.surrealcms.com/assets/img/wordmark-light.svg",
+            alt: "Surreal CMS logo" } })])])]), n("div", { staticClass: "clean" }, [n(
+        "el-button", { attrs: { type: e.isDark ? "info" : "default" }, on: { click: function(
+            t) { return e.clear() } } }, [e._v("\n        Clear\n      ")]), n(
+          "el-tooltip", { directives: [{ name: "show", rawName: "v-show", value: e.isCopySupported &&
+                e.copyOnClean, expression: "isCopySupported && copyOnClean" }], ref: "copyButton",
+            staticClass: "clean-button", attrs: { effect: e.isDark ? "light" : "dark", manual: !0,
+              content: "Cleaned & copied!", placement: "top" }, model: { value: e.copyTooltipVisible,
+              callback: function(t) { e.copyTooltipVisible = t },
+            expression: "copyTooltipVisible" } }, [n("el-button", { attrs: { type: "primary" } }, [e
+            ._v("Clean + Copy")
+          ])], 1), n("el-tooltip", { directives: [{ name: "show", rawName: "v-show", value: !e
+                .isCopySupported || !e.copyOnClean,
+            expression: "!isCopySupported || !copyOnClean" }
+          ], ref: "cleanButton", staticClass: "clean-button", attrs: { effect: e.isDark ?
+              "light" : "dark", manual: !0, content: "Cleaned!", placement: "top" },
+          model: { value: e.cleanTooltipVisible, callback: function(t) { e.cleanTooltipVisible =
+                t }, expression: "cleanTooltipVisible" } }, [n(
+        "el-button", { attrs: { type: "primary" }, on: { click: function(t) { return e
+                .handleClean() } } }, [e._v("Clean")])], 1)], 1)]), n(
+        "el-dialog", { attrs: { title: "Advanced Settings", visible: e.advancedSettingsVisible,
+            width: "500px" }, on: { "update:visible": function(t) { e.advancedSettingsVisible = t } } }, [n(
+          "el-form", [n("el-tabs", { attrs: { "tab-position": e.advancedSettingsTabPosition },
+            model: { value: e.advancedSettingsTab, callback: function(t) { e.advancedSettingsTab =
+                  t }, expression: "advancedSettingsTab" } }, [n(
+          "el-tab-pane", { attrs: { label: "HTML", name: "html" } }, [n(
+          "el-form-item", { attrs: { label: "Indent scripts" } }, [n(
+          "el-select", { attrs: { size: "small", placeholder: "" }, model: { value: e
+                .htmlIndentScripts, callback: function(t) { e.htmlIndentScripts = t },
+              expression: "htmlIndentScripts" } }, [n(
+          "el-option", { attrs: { label: "Normal", value: "normal" } }), n(
+          "el-option", { attrs: { label: "Keep", value: "keep" } }), n(
+          "el-option", { attrs: { label: "Indent", value: "indent" } })], 1)], 1), n(
+            "el-form-item", { attrs: { label: "Wrap attributes" } }, [n(
+            "el-select", { attrs: { size: "small", placeholder: "" }, model: { value: e
+                  .htmlWrapAttributes, callback: function(t) { e.htmlWrapAttributes = t },
+                expression: "htmlWrapAttributes" } }, [n(
+              "el-option", { attrs: { label: "Auto", value: "auto" } }), n(
+              "el-option", { attrs: { label: "Force", value: "force" } }), n(
+              "el-option", { attrs: { label: "Force aligned", value: "force-aligned" } }),
+              n("el-option", { attrs: { label: "Force expand multiline",
+                  value: "force-expand-multiline" } }), n(
+              "el-option", { attrs: { label: "Aligned multiple",
+                value: "aligned-multiple" } }), n("el-option", { attrs: { label: "Preserve",
+                  value: "preserve" } }), n(
+              "el-option", { attrs: { label: "Preserve aligned",
+                value: "preserve-aligned" } })
+            ], 1)], 1), n("el-checkbox", { model: { value: e.htmlPreserveNewlines,
+              callback: function(t) { e.htmlPreserveNewlines = t },
+              expression: "htmlPreserveNewlines" } }, [e._v("Preserve newlines")]), n("br"), n(
+            "el-checkbox", { model: { value: e.htmlIndentInnerHtml, callback: function(t) { e
+                    .htmlIndentInnerHtml = t }, expression: "htmlIndentInnerHtml" } }, [e._v(
+              "Indent head and body")]), n("br"), n("el-checkbox", { model: { value: e
+                .htmlIndentEmptyLines, callback: function(t) { e.htmlIndentEmptyLines = t },
+              expression: "htmlIndentEmptyLines" } }, [e._v("Indent empty lines")]), n("br"), n(
+            "el-checkbox", { model: { value: e.htmlEndWithNewline, callback: function(t) { e
+                    .htmlEndWithNewline = t }, expression: "htmlEndWithNewline" } }, [e._v(
+              "End with newline")])], 1), n("el-tab-pane", { attrs: { label: "CSS", name: "css" } },
+            [n("el-checkbox", { model: { value: e.cssSelectorSeparatorNewline, callback: function(
+                t) { e.cssSelectorSeparatorNewline = t },
+                expression: "cssSelectorSeparatorNewline" } }, [e._v(
+              "Newline between selectors")]), n("br"), n("el-checkbox", { model: { value: e
+                  .cssNewlineBetweenRules, callback: function(t) { e.cssNewlineBetweenRules =
+                    t }, expression: "cssNewlineBetweenRules" } }, [e._v(
+              "Newline between rules")]), n("br"), n("el-checkbox", { model: { value: e
+                  .cssIndentEmptyLines, callback: function(t) { e.cssIndentEmptyLines = t },
+                expression: "cssIndentEmptyLines" } }, [e._v("Indent empty lines")]), n("br"), n(
+              "el-checkbox", { model: { value: e.cssEndWithNewline, callback: function(t) { e
+                      .cssEndWithNewline = t }, expression: "cssEndWithNewline" } }, [e._v(
+                "End with newline")])], 1), n("el-tab-pane", { attrs: { label: "JavaScript",
+              name: "js" } }, [n("el-form-item", { attrs: { label: "Brace style" } }, [n(
+              "el-select", { attrs: { size: "small", placeholder: "" }, model: { value: e
+                    .jsBraceStyle, callback: function(t) { e.jsBraceStyle = t },
+                  expression: "jsBraceStyle" } }, [n(
+              "el-option", { attrs: { label: "Collapse + preserve inline",
+                  value: "collapse-preserve-inline" } }), n(
+              "el-option", { attrs: { label: "Collapse", value: "collapse" } }), n(
+                "el-option", { attrs: { label: "Expand", value: "expand" } }), n(
+                "el-option", { attrs: { label: "End expand", value: "end-expand" } }), n(
+                "el-option", { attrs: { label: "None", value: "none" } })], 1)], 1), n(
+              "el-form-item", { attrs: { label: "Operator position" } }, [n(
+              "el-select", { attrs: { size: "small", placeholder: "" }, model: { value: e
+                    .jsOperatorPosition, callback: function(t) { e.jsOperatorPosition = t },
+                  expression: "jsOperatorPosition" } }, [n(
+                  "el-option", { attrs: { label: "Before newline",
+                    value: "before-newline" } }), n(
+                "el-option", { attrs: { label: "After newline", value: "after-newline" } }),
+                n("el-option", { attrs: { label: "Preserve newline",
+                  value: "preserve-newline" } })
+              ], 1)], 1), n("el-checkbox", { model: { value: e.jsPreserveNewlines,
+                callback: function(t) { e.jsPreserveNewlines = t },
+                expression: "jsPreserveNewlines" } }, [e._v("Preserve newlines")]), n("br"), n(
+              "el-checkbox", { model: { value: e.jsSpaceInParen, callback: function(t) { e
+                      .jsSpaceInParen = t }, expression: "jsSpaceInParen" } }, [e._v(
+                "Space in parens")]), n("br"), n("el-checkbox", { model: { value: e
+                  .jsSpaceInEmptyParen, callback: function(t) { e.jsSpaceInEmptyParen = t },
+                expression: "jsSpaceInEmptyParen" } }, [e._v("Space in empty parens")]), n("br"),
+            n("el-checkbox", { model: { value: e.jsSpaceAfterAnonFunction, callback: function(
+                  t) { e.jsSpaceAfterAnonFunction = t },
+                expression: "jsSpaceAfterAnonFunction" } }, [e._v(
+                "Space before anonymous function parens")]), n("br"), n(
+            "el-checkbox", { model: { value: e.jsSpaceAfterNamedFunction, callback: function(
+                t) { e.jsSpaceAfterNamedFunction = t },
+              expression: "jsSpaceAfterNamedFunction" } }, [e._v(
+              "Space before named function parens")]), n("br"), n(
+              "el-checkbox", { model: { value: e.jsUnindentChainedMethods, callback: function(
+                  t) { e.jsUnindentChainedMethods = t },
+                expression: "jsUnindentChainedMethods" } }, [e._v("Don’t indent chained methods")]
+              ), n("br"), n("el-checkbox", { model: { value: e.jsBreakChainedMethods,
+                callback: function(t) { e.jsBreakChainedMethods = t },
+                expression: "jsBreakChainedMethods" } }, [e._v(
+              "Break chained methods across lines")]), n("br"), n(
+            "el-checkbox", { model: { value: e.jsKeepArrayIndentation, callback: function(t) { e
+                    .jsKeepArrayIndentation = t }, expression: "jsKeepArrayIndentation" } }, [e
+              ._v("Preserve array indentation")
+            ]), n("br"), n("el-checkbox", { model: { value: e.jsUnescapeStrings,
+                callback: function(t) { e.jsUnescapeStrings = t },
+                expression: "jsUnescapeStrings" } }, [e._v("Decode printable chars")]), n("br"),
+            n("el-checkbox", { model: { value: e.jsCommaFirst, callback: function(t) { e
+                    .jsCommaFirst = t }, expression: "jsCommaFirst" } }, [e._v(
+              "Commas at beginning of newlines")]), n("br"), n("el-checkbox", { model: { value: e
+                  .jsIndentEmptyLines, callback: function(t) { e.jsIndentEmptyLines = t },
+                expression: "jsIndentEmptyLines" } }, [e._v("Indent empty lines")]), n("br"), n(
+              "el-checkbox", { model: { value: e.jsEndWithNewline, callback: function(t) { e
+                      .jsEndWithNewline = t }, expression: "jsEndWithNewline" } }, [e._v(
+                "End with newline")])
+          ], 1), n("el-tab-pane", { attrs: { label: "Shortcuts", name: "shortcuts" } }, [n(
+          "table", { staticClass: "table" }, [n("tbody", [n("tr", [n("td", [n("kbd", [e._v(e
+            ._s(e.shiftKey))]), n("kbd", [e._v(e._s(e.metaKey))]), n("kbd", [e
+            ._v("H")
+          ])]), n("td", [e._v("HTML mode")])]), n("tr", [n("td", [n("kbd", [e._v(e._s(e
+            .shiftKey))]), n("kbd", [e._v(e._s(e.metaKey))]), n("kbd", [e._v(
+            "C")])]), n("td", [e._v("CSS mode")])]), n("tr", [n("td", [n("kbd", [e._v(e
+            ._s(e.shiftKey))]), n("kbd", [e._v(e._s(e.metaKey))]), n("kbd", [e
+            ._v("J")
+          ])]), n("td", [e._v("JavaScript mode")])]), n("tr", [n("td", [n("kbd", [e._v(e
+            ._s(e.shiftKey))]), n("kbd", [e._v(e._s(e.metaKey))]), n("kbd", [e
+            ._v("↵")
+          ])]), n("td", [e._v("Clean")])]), n("tr", [n("td", [n("kbd", [e._v(e._s(e
+            .shiftKey))]), n("kbd", [e._v(e._s(e.metaKey))]), n("kbd", [e._v(
+            "⌫")])]), n("td", [e._v("Clear")])]), n("tr", [n("td", [n("kbd", [e._v(e._s(
+            e.metaKey))]), n("kbd", [e._v(",")])]), n("td", [e._v("Settings")])]), n(
+            "tr", [n("td", [n("kbd", [e._v(e._s(e.shiftKey))]), n("kbd", [e._v(e._s(e
+              .metaKey))]), n("kbd", [e._v(",")])]), n("td", [e._v(
+              "Advanced Settings")])]), n("tr", [n("td", [n("kbd", [e._v(e._s(e
+            .metaKey))]), n("kbd", [e._v("/")])]), n("td", [e._v("Warm "), n(
+          "a", { attrs: { href: "https://twitter.com/staringatlights",
+              target: "_blank" } }, [e._v("Andrew’s")]), e._v(
+            " heart with a rooftop dance party")])])])])])], 1)], 1), n(
+        "span", { staticClass: "dialog-footer", attrs: { slot: "footer" }, slot: "footer" }, [n(
+          "el-button", { attrs: { type: "primary" }, on: { click: function(t) { e
+                  .advancedSettingsVisible = !1 } } }, [e._v("Close")])], 1)], 1)], 1) },
+      l = [function() { var e = this,
+          t = e.$createElement,
+          n = e._self._c || t; return n("div", { staticClass: "wordmark" }, [n("h1", [e._v(
+          "Beautify Your Code")])]) }],
+      o = (n("456d"), n("ac6a"), n("28a5"), n("a481"), n("4917"), n("6762"), n("2fdb"), function() { var e = this,
+          t = e.$createElement,
+          n = e._self._c || t; return n("div", { class: { stat: !0, "is-dark": e.dark } }, [n(
+        "small", { staticClass: "label" }, [e._v("\n    " + e._s(e.label) + "\n  ")]), e._v("\n\n  " + e._s(
+          e.value) + "\n")]) }),
+      c = [],
+      d = (n("c5f6"), { name: "Stat", props: { label: String, value: [String, Number], dark: Boolean } }),
+      p = d,
+      u = (n("6128"), n("2877")),
+      h = Object(u["a"])(p, o, c, !1, null, "5fd066ec", null),
+      m = h.exports,
+      b = n("56b3"),
+      f = n.n(b),
+      v = n("b311"),
+      g = n.n(v),
+      k = n("e552"),
+      _ = n.n(k),
+      w = n("b6de"),
+      y = n.n(w),
+      S = (n("d7d5"), n("765c"), n("8c33"), n("8f0a"), n("a7be"), n("7b00"), n("d69f"), n("f9d4"), n(
+      "44d5"), { name: "Beautifier", components: { Stat: m }, data: function() { return { aboutDialogVisible: !1,
+            advancedSettingsTab: "html", advancedSettingsTabPosition: "left", advancedSettingsVisible: !1,
+            cleanTooltipVisible: !1, copyTooltipVisible: !1, editor: null, isCopySupported: g.a.isSupported(),
+            isDragging: !1, isMac: /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform),
+            isIos: /(iPhone|iPod|iPad)/i.test(navigator.platform), charCount: 0, size: 0, lines: 0, copyOnClean:
+              !0, detectIndent: !0, isDark: !0, fontSize: 13, indentSpaces: 2, indentWithTabs: !1, lineNumbers:
+              !0, matchBrackets: !0, mode: "html", ruler: 120, wrapLines: !0, htmlIndentScripts: "normal",
+            htmlWrapAttributes: "auto", htmlPreserveNewlines: !1, htmlIndentInnerHtml: !1, htmlIndentEmptyLines:
+              !1, htmlEndWithNewline: !1, cssSelectorSeparatorNewline: !1, cssNewlineBetweenRules: !1,
+            cssIndentEmptyLines: !1, cssEndWithNewline: !1, jsBraceStyle: "collapse-preserve-inline",
+            jsOperatorPosition: "before-newline", jsPreserveNewlines: !1, jsSpaceInParen: !1,
+            jsSpaceInEmptyParen: !1, jsSpaceAfterAnonFunction: !1, jsSpaceAfterNamedFunction: !1,
+            jsUnindentChainedMethods: !1, jsBreakChainedMethods: !1, jsKeepArrayIndentation: !1,
+            jsUnescapeStrings: !1, jsCommaFirst: !1, jsIndentEmptyLines: !1, jsEndWithNewline: !1,
+            settingsToStore: ["copyOnClean", "detectIndent", "isDark", "fontSize", "indentSpaces",
+              "indentWithTabs", "lineNumbers", "matchBrackets", "mode", "ruler", "wrapLines",
+              "htmlIndentScripts", "htmlWrapAttributes", "htmlPreserveNewlines", "htmlIndentInnerHtml",
+              "htmlIndentEmptyLines", "htmlEndWithNewline", "cssSelectorSeparatorNewline",
+              "cssNewlineBetweenRules", "cssIndentEmptyLines", "cssEndWithNewline", "jsBraceStyle",
+              "jsOperatorPosition", "jsPreserveNewlines", "jsSpaceInParen", "jsSpaceInEmptyParen",
+              "jsSpaceAfterAnonFunction", "jsSpaceAfterNamedFunction", "jsUnindentChainedMethods",
+              "jsBreakChainedMethods", "jsKeepArrayIndentation", "jsUnescapeStrings", "jsCommaFirst",
+              "jsIndentEmptyLines", "jsEndWithNewline"
+            ] } }, computed: { indent: { get: function() { return this.indentWithTabs ? "tab" : "".concat(this
+                .indentSpaces, " sp") }, set: function(e) { "tab" === e ? (this.indentWithTabs = !0, this
+                .indentSpaces = 4) : (this.indentWithTabs = !1, this.indentSpaces = parseInt(e, 10)) } },
+          metaKey: function() { return this.isMac ? "⌘" : "Ctrl" }, shiftKey: function() { return this.isMac ?
+              "⇧" : "Shift" } }, watch: { indentSpaces: function() { this.editor.setOption("indentUnit", this
+              .indentSpaces) }, indentWithTabs: function() { this.editor.setOption("indentWithTabs", this
+              .indentWithTabs) }, isDark: function() { this.editor.setOption("theme", this.isDark ? "dark" :
+              "light") }, lineNumbers: function() { this.editor.setOption("lineNumbers", this.lineNumbers) },
+          matchBrackets: function() { this.editor.setOption("matchBrackets", this.matchBrackets), this.editor
+              .setOption("matchTags", !!this.matchBrackets && { bothTags: !0 }) }, mode: function() { this.editor
+              .setOption("mode", this.getCodeMirrorMode()) }, ruler: function() { this.editor.setOption("rulers",
+              this.ruler > 0 ? [{ column: this.ruler }] : []) }, wrapLines: function() { this.editor.setOption(
+              "lineWrapping", this.wrapLines) } }, created: function() { this.restoreSettings() },
+        mounted: function() { var e = this;
+            this.editor = f.a.fromTextArea(this.$refs.textarea, { lineNumbers: this.lineNumbers,
+                lineWrapping: this.wrapLines, mode: this.getCodeMirrorMode(), matchBrackets: this.matchBrackets,
+                matchTags: !!this.matchBrackets && { bothTags: !0 },
+                placeholder: "Instructions:\n\n  1. Paste or drop some code\n\n  2. Hit the button\n\n  3. "
+                  .concat(this.getSaying(), "\n\nYour settings will be saved on this device.\n"), theme: this
+                  .isDark ? "dark" : "light", rulers: [{ column: this.ruler }], extraKeys: { Tab: function(
+                  e) { return e.execCommand("indentMore") }, "Shift-Tab": function(e) { return e.execCommand(
+                      "indentLess") } } }), this.editor.on("dragenter", function(t, n) { return e.handleDragEnter(
+                  n) }), this.editor.on("dragleave", function(t, n) { return e.handleDragLeave(n) }), this.editor
+              .on("dragover", function(t, n) { return e.handleDragOver(n) }), this.editor.on("drop", function(t,
+                n) { return e.handleDrop(n) }), this.editor.on("paste", function(t, n) { return e.handlePaste(
+                  n) }), this.editor.on("change", function() { return e.updateStats() }), this.editor.focus(),
+              this.updateStats(), this.isCopySupported && new g.a(this.$refs.copyButton
+          .$el, { text: function() { e.clean(); var t = e.editor.getValue(); return t ? (e
+                    .copyTooltipVisible = !0, setTimeout(function() { return e.copyTooltipVisible = !1 },
+                      1e3), t) : "" } }), this.settingsToStore.map(function(t) { return e.$watch(t,
+              function() { return e.saveSettings() }) }), document.addEventListener("keydown", this
+              .handleKeyDown), window.addEventListener("resize", this.handleResize), this.handleResize() },
+        methods: { clean: function() { var e = this.editor.getValue(),
+              t = { indent_char: " ", indent_size: this.indentSpaces, indent_with_tabs: this.indentWithTabs,
+                end_with_newline: !0, preserve_newlines: !0, max_preserve_newlines: 1, wrap_line_length: this
+                  .ruler, css: { selector_separator_newline: this.cssSelectorSeparatorNewline,
+                  newline_between_rules: this.cssNewlineBetweenRules, indent_empty_lines: this
+                    .cssIndentEmptyLines, end_with_newline: this.cssEndWithNewline },
+                html: { end_with_newline: this.htmlEndWithNewline, extra_liners: [], indent_empty_lines: this
+                    .htmlIndentEmptyLines, indent_inner_html: this.htmlIndentInnerHtml, indent_scripts: this
+                    .htmlIndentScripts, preserve_newlines: this.htmlPreserveNewlines, wrap_attributes: this
+                    .htmlWrapAttributes }, js: { brace_style: this.jsBraceStyle, operator_position: this
+                    .jsOperatorPosition, preserve_newlines: this.jsPreserveNewlines, space_in_paren: this
+                    .jsSpaceInParen, space_in_empty_paren: this.jsSpaceInEmptyParen,
+                  space_after_anon_function: this.jsSpaceAfterAnonFunction, space_after_named_function: this
+                    .jsSpaceAfterNamedFunction, unindent_chained_methods: this.jsUnindentChainedMethods,
+                  break_chained_methods: this.jsBreakChainedMethods, keep_array_indentation: this
+                    .jsKeepArrayIndentation, unescape_strings: this.jsUnescapeStrings, comma_first: this
+                    .jsCommaFirst, indent_empty_lines: this.jsIndentEmptyLines, end_with_newline: this
+                    .jsEndWithNewline } }; if (e.length) switch (this.mode) {
+              case "html":
+                this.editor.setValue(_.a.html(e, t)); break;
+              case "css":
+                this.editor.setValue(_.a.css(e, t)); break;
+              case "js":
+                this.editor.setValue(_.a.js(e, t)); break } else this.editor.setValue("") },
+      clear: function() { this.editor.setValue(""), this.editor.clearHistory() },
+      detectIndentation: function() { var e = this.editor.getValue(),
+              t = y()(e); "tab" === t.type ? (this.indentWithTabs = !0, this.indentSpaces = 4) : (this
+              .indentWithTabs = !1, this.indentSpaces = [2, 3, 4].includes(t.amount) ? t.amount : 2) },
+          getAdvancedSettingsTabPosition: function() { return window.innerWidth > 576 ? "left" : "top" },
+          getCodeMirrorMode: function() { return "js" === this.mode ? "javascript" : "css" === this.mode ? "css" :
+              "html" === this.mode ? "php" : "text" }, getSaying: function() { var e = ["Relish the magic! ✨",
+              "Tell a friend! 📢", "Make something awesome! 💪", "Enjoy a beer! 🍺",
+              "Celebrate with a hotdog! 🌭", "Thank the almighty beautifier! 🙏",
+              "Sing like no one is listening! 🎤", "Dance like nobody is watching! 💃",
+              "Find more code to clean! 💻"
+            ]; return e[Math.floor(Math.random() * e.length)] }, handleClean: function() { var e = this;
+            this.clean(), this.cleanTooltipVisible = !0, setTimeout(function() { return e
+                .cleanTooltipVisible = !1 }, 1e3) }, handleDragEnter: function(e) { e.preventDefault() },
+          handleDragLeave: function(e) { e.preventDefault(), this.isDragging = !1 }, handleDragOver: function(
+          e) { e.preventDefault(), this.isDragging = !0 }, handleDrop: function(e) { var t = this,
+              n = e.dataTransfer.files[0],
+              a = new FileReader;
+            e.preventDefault(), this.isDragging = !1, n && ("" === n.type || n.type.match(/^text\//)) && (a
+              .onload = function(e) { var a = e.target.result.replace(/\r/g, "\n"); "text/css" === n.type && (
+                    t.mode = "css"), "text/html" === n.type && (t.mode = "html"), "text/php" === n.type && (t
+                    .mode = "html"), "text/javascript" === n.type && (t.mode = "js"), t.editor.setValue(a), t
+                  .detectIndent && t.detectIndentation() }, a.readAsText(n)) }, handleKeyDown: function(e) { var
+              t = e.ctrlKey || e.metaKey,
+              n = e.shiftKey,
+              a = e.key;
+            t && n && "h" === a && (e.preventDefault(), this.mode = "html"), t && n && "c" === a && (e
+                .preventDefault(), this.mode = "css"), t && n && "j" === a && (e.preventDefault(), this.mode =
+                "js"), t && n && "Enter" === a && (e.preventDefault(), this.clean()), t && n && "Backspace" ===
+              a && (e.preventDefault(), this.clear()), t && !n && "," === a && (e.preventDefault(), this.$refs
+                .settingsPopover.doShow()), t && n && "," === a && (e.preventDefault(), this
+                .advancedSettingsVisible = !0), t && "/" === a && (e.preventDefault(), window.open(
+                "https://www.youtube.com/watch?v=ff8eHolqQbI")) }, handlePaste: function() { var e = this;
+            this.detectIndent && this.$nextTick(function() { return e.detectIndentation() }) },
+          handleResize: function() { this.advancedSettingsTabPosition = this.getAdvancedSettingsTabPosition(),
+                this.isIos && (this.$refs.main.style.height = "".concat(window.innerHeight, "px")) },
+          updateStats: function() { var e = this.editor.getValue();
+              this.charCount = e.split("").length.toLocaleString(), this.lines = e.split("\n").length, this.size =
+                this.prettyBytes(new Blob([e]).size) }, prettyBytes: function(e) { e = parseInt(e); var t = ["B",
+                "KB", "MB", "GB", "TB"
+              ],
+              n = Math.max(0, Math.floor(Math.log(e) / Math.log(1024))); return e > 0 ? Math.round(e / Math.pow(
+              1024, n)) + " " + t[n] : "0 B" }, saveSettings: function() { var e = this,
+              t = {};
+            this.settingsToStore.map(function(n) { return t[n] = e[n] }), localStorage.setItem("settings", JSON
+              .stringify(t)) }, restoreSettings: function() { var e = this,
+              t = localStorage.getItem("settings"); if (t) try { var n = JSON.parse(t);
+              Object.keys(n).forEach(function(t) { e.settingsToStore.includes(t) && (e[t] = n[t]) }) } catch (
+              a) { window.alert("There was an error loading your previous settings: ".concat(a)) } } } }),
+      j = S,
+      x = (n("ef95"), Object(u["a"])(j, r, l, !1, null, "1145ea48", null)),
+      C = x.exports,
+      I = { name: "app", components: { Beautifier: C } },
+      N = I,
+      T = (n("5c0b"), Object(u["a"])(N, s, i, !1, null, null, null)),
+      D = T.exports,
+      P = n("5c96");
+    a["default"].use(P["Button"]), a["default"].use(P["Checkbox"]), a["default"].use(P["Col"]), a["default"].use(P[
+      "Dialog"]), a["default"].use(P["Form"]), a["default"].use(P["FormItem"]), a["default"].use(P["Input"]), a[
+      "default"].use(P["Option"]), a["default"].use(P["Popover"]), a["default"].use(P["Row"]), a["default"].use(P[
+      "Select"]), a["default"].use(P["Switch"]), a["default"].use(P["TabPane"]), a["default"].use(P["Tabs"]), a[
+      "default"].use(P["Tooltip"]), a["default"].config.productionTip = !1, new a["default"]({ render: function(
+      e) { return e(D) } }).$mount("#app") }, "5c0b": function(e, t, n) { "use strict"; var a = n("5e27"),
+      s = n.n(a);
+    s.a }, "5e27": function(e, t, n) {}, 6128: function(e, t, n) { "use strict"; var a = n("e883"),
+      s = n.n(a);
+    s.a }, 9247: function(e, t, n) {}, e883: function(e, t, n) {}, ef95: function(e, t, n) { "use strict"; var a = n(
+        "9247"),
+      s = n.n(a);
+    s.a } });
+//# sourceMappingURL=app.0c939182.js.map
