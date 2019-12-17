@@ -103,7 +103,6 @@
               value: this.indent } }), n("stat", { attrs: { label: "lines", dark: e.isDark, value: this
                 .lines } }), n("stat", { attrs: { label: "chars", dark: e.isDark, value: this
               .charCount } }), n("stat", { attrs: { label: "size", dark: e.isDark, value: this
-              .size } })], 1), n("div", { staticClass: "credits" }, [n("span", [n(
         "el-button", { attrs: { type: e.isDark ? "info" : "default" }, on: { click: function(
             t) { return e.clear() } } }, [e._v("\n        Clear\n      ")]), n(
           "el-tooltip", { directives: [{ name: "show", rawName: "v-show", value: e.isCopySupported &&
