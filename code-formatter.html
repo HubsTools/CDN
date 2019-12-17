@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://www.surrealcms.com/beautify/ -->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <link rel="icon" href="https://www.surrealcms.com/assets/img/favicon.png">
+  <meta name="description" content="A free code cleanup tool for beautifying HTML, CSS, and JavaScript.">
+  <title>Beautify HTML, CSS, and JavaScript | Surreal CMS</title>
+  <meta property="og:title" content="Beautify HTML, CSS, and JavaScript">
+  <meta property="og:type" content="webpage">
+  <meta property="og:url" content="https://www.surrealcms.com/beautify">
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1515536765-9b2a70c4b333?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1276&amp;q=80">
+  <link href="./Beautify HTML, CSS, and JavaScript _ Surreal CMS_files/app.b3ff0191.css" rel="preload" as="style">
+  <link href="./Beautify HTML, CSS, and JavaScript _ Surreal CMS_files/chunk-vendors.9b8c6c9b.css" rel="preload"
+    as="style">
+  <link href="./Beautify HTML, CSS, and JavaScript _ Surreal CMS_files/app.0c939182.js.download" rel="preload"
+    as="script">
+  <link href="./Beautify HTML, CSS, and JavaScript _ Surreal CMS_files/chunk-vendors.9b6ad6f2.js.download" rel="preload"
+    as="script">
+  <link href="./Beautify HTML, CSS, and JavaScript _ Surreal CMS_files/chunk-vendors.9b8c6c9b.css" rel="stylesheet">
+  <link href="./Beautify HTML, CSS, and JavaScript _ Surreal CMS_files/app.b3ff0191.css" rel="stylesheet">
+  <style type="text/css">
+    button.btn[data-v-cef78672] {
+      display: inline-block;
+      font-weight: 300;
+      line-height: 1.25;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      user-select: none;
+      border: 1px solid transparent;
+      cursor: pointer;
+      letter-spacing: 1px;
+      transition: all .15s ease
+    }
+    button.btn.btn-sm[data-v-cef78672] {
+      padding: .4rem .8rem;
+      font-size: .8rem;
+      border-radius: .2rem
+    }
+    button.btn.btn-primary[data-v-cef78672] {
+      color: #fff;
+      background-color: #45C8F1;
+      border-color: #45C8F1
+    }
+    button.btn.btn-outline-primary[data-v-cef78672] {
+      color: #45C8F1;
+      background-color: transparent;
+      border-color: #45C8F1
+    }
+    button.btn.btn-danger[data-v-cef78672] {
+      color: #fff;
+      background-color: #FF4949;
+      border-color: #FF4949
+    }
+    .text-muted[data-v-cef78672] {
+      color: #8492A6
+    }
+    .text-center[data-v-cef78672] {
+      text-align: center
+    }
+    .drop-down-enter[data-v-cef78672], .drop-down-leave-to[data-v-cef78672] {
+      transform: translateX(0) translateY(-20px);
+      transition-timing-function: cubic-bezier(0.74, 0.04, 0.26, 1.05);
+      opacity: 0
+    }
+    .drop-down-enter-active[data-v-cef78672], .drop-down-leave-active[data-v-cef78672] {
+      transition: all .15s
+    }
+    .move-left-enter[data-v-cef78672], .move-left-leave-to[data-v-cef78672] {
+      transform: translateY(0) translateX(-80px);
+      transition-timing-function: cubic-bezier(0.74, 0.04, 0.26, 1.05);
+      opacity: 0
+    }
+    .move-left-enter-active[data-v-cef78672], .move-left-leave-active[data-v-cef78672] {
+      transition: all .15s
+    }
+    .shake[data-v-cef78672] {
+      animation: shake-data-v-cef78672 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0)
+    }
+    @keyframes shake-data-v-cef78672 {
+      10%, 90% {
+        transform: translate3d(-1px, 0, 0)
+      }
+      20%, 80% {
+        transform: translate3d(2px, 0, 0)
+      }
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0)
+      }
+      40%, 60% {
+        transform: translate3d(4px, 0, 0)
+      }
+    }
+    .pulse[data-v-cef78672] {
+      animation: pulse-data-v-cef78672 2s ease infinite
+    }
+    @keyframes pulse-data-v-cef78672 {
+      0% {
+        opacity: .7
+      }
+      50% {
+        opacity: .4
+      }
+      100% {
+        opacity: .7
+      }
+    }
+    .flash-once[data-v-cef78672] {
+      animation: flash-once 3.5s ease 1
+    }
+    @keyframes fade-up-data-v-cef78672 {
+      0% {
+        transform: translate3d(0, 10px, 0);
+        opacity: 0
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+      }
+    }
+    .fade-in[data-v-cef78672] {
+      animation: fade-in-data-v-cef78672 .3s ease-in-out
+    }
+    @keyframes fade-in-data-v-cef78672 {
+      0% {
+        opacity: 0
+      }
+      100% {
+        opacity: 1
+      }
+    }
+    .spin[data-v-cef78672] {
+      animation-name: spin-data-v-cef78672;
+      animation-duration: 2000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear
+    }
+    @keyframes spin-data-v-cef78672 {
+      from {
+        transform: rotate(0deg)
+      }
+      to {
+        transform: rotate(360deg)
+      }
+    }
+    .bounceIn[data-v-cef78672] {
+      animation-name: bounceIn-data-v-cef78672;
+      transform-origin: center bottom;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      animation-iteration-count: 1
+    }
+    @keyframes bounceIn-data-v-cef78672 {
+      0%, 20%, 40%, 60%, 80%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+      }
+      0% {
+        opacity: 1;
+        -webkit-transform: scale3d(0.8, 0.8, 0.8);
+        transform: scale3d(0.8, 0.8, 0.8)
+      }
+      20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1)
+      }
+      40% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9)
+      }
+      60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03)
+      }
+      80% {
+        -webkit-transform: scale3d(0.97, 0.97, 0.97);
+        transform: scale3d(0.97, 0.97, 0.97)
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+      }
+    }
+    @keyframes dots-data-v-cef78672 {
+      0%, 20% {
+        color: rgba(0, 0, 0, 0);
+        text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0)
+      }
+      40% {
+        color: #8492A6;
+        text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0)
+      }
+      60% {
+        text-shadow: 0.25em 0 0 #8492A6, 0.5em 0 0 rgba(0, 0, 0, 0)
+      }
+      80%, 100% {
+        text-shadow: .25em 0 0 #8492A6, .5em 0 0 #8492A6
+      }
+    }
+    @keyframes recording-data-v-cef78672 {
+      0% {
+        box-shadow: 0px 0px 5px 0px rgba(173, 0, 0, 0.3)
+      }
+      65% {
+        box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0.3)
+      }
+      90% {
+        box-shadow: 0px 0px 5px 5px rgba(173, 0, 0, 0)
+      }
+    }
+    html[data-v-cef78672] {
+      max-height: 500px
+    }
+    body[data-v-cef78672] {
+      margin: 0;
+      font-size: 100%;
+      color: #3C4858;
+      width: 350px;
+      max-height: 500px
+    }
+    a[data-v-cef78672] {
+      text-decoration: none;
+      color: #45C8F1
+    }
+    h1[data-v-cef78672], h2[data-v-cef78672], h3[data-v-cef78672], h4[data-v-cef78672] {
+      margin-top: 0
+    }
+    .container_selected_area[data-v-cef78672] {
+      padding: 0px;
+      position: fixed;
+      z-index: 1000000;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      display: none;
+      visibility: hidden
+    }
+    .container_selected_area.active[data-v-cef78672] {
+      visibility: visible;
+      display: block
+    }
+    .container_selected_area .label[data-v-cef78672] {
+      font-family: "Didact Gothic Regular", sans-serif;
+      font-size: 22px;
+      text-align: center;
+      padding-top: 15px
+    }
+    .container_selected_area .area[data-v-cef78672] {
+      border: 1px solid #1e83ff;
+      background: rgba(30, 131, 255, 0.1);
+      display: none;
+      position: fixed;
+      z-index: 1000000;
+      box-sizing: border-box
+    }
+    .container_selected_area .area.active[data-v-cef78672] {
+      display: block;
+      top: 0px;
+      left: 0px
+    }
+    .hide[data-v-cef78672] {
+      display: none
+    }
+  </style>
+</head>
+<body class=""><noscript><strong>Please enable JavaScript to use this tool.</strong></noscript>
+  <div id="app">
+    <main data-v-1145ea48="" class="is-dark">
+      <header data-v-1145ea48="">
+        <div data-v-1145ea48="" class="wordmark">
+          <h1 data-v-1145ea48="">Beautify Your Code</h1>
+        </div>
+        <nav data-v-1145ea48="" class="nav-items"><button data-v-1145ea48="" type="button"
+            class="el-button el-button--info is-round">
+            <!---->
+            <!----><span> HTML </span></button><button data-v-1145ea48="" type="button"
+            class="el-button el-button--info is-round">
+            <!---->
+            <!----><span> CSS </span></button><button data-v-1145ea48="" type="button"
+            class="el-button el-button--primary is-round">
+            <!---->
+            <!----><span> JavaScript </span></button><span data-v-1145ea48=""><button data-v-1145ea48="" type="button"
+              class="el-button el-button--info is-round el-popover__reference" aria-describedby="el-popover-4699"
+              tabindex="0">
+              <!---->
+              <!----><span><i data-v-1145ea48="" class="el-icon-s-operation hidden-sm-and-down"></i> Settings <i
+                  data-v-1145ea48="" class="el-icon-arrow-down"></i></span></button></span><button data-v-1145ea48=""
+            type="button" class="el-button el-button--info is-round">
+            <!---->
+            <!----><span> About </span></button></nav>
+      </header>
+      <div data-v-1145ea48="" class="editor is-dark" style="font-size: 13px;">
+        <div data-v-1145ea48="" class="editor-wrap"><textarea data-v-1145ea48="" style="display: none;"></textarea>
+          <div class="CodeMirror cm-s-dark CodeMirror-wrap CodeMirror-empty">
+            <div
+              style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 3.99469px; left: 36.9841px;">
+              <textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0"
+                style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea>
+            </div>
+            <div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true">
+              <div style="min-width: 1px; height: 0px;"></div>
+            </div>
+            <div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true">
+              <div style="height: 100%; min-height: 1px; width: 0px;"></div>
+            </div>
+            <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
+            <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
+            <div class="CodeMirror-scroll" tabindex="-1" draggable="false">
+              <div class="CodeMirror-sizer"
+                style="margin-left: 29px; margin-bottom: -17px; border-right-width: 13px; min-height: 26px; padding-right: 0px; padding-bottom: 0px;">
+                <div style="position: relative; top: 0px;">
+                  <div class="CodeMirror-lines" role="presentation">
+                    <div class="CodeMirror-rulers" style="min-height: 541px;">
+                      <div class="CodeMirror-ruler" style="left: 947.435px;"></div>
+                    </div>
+                    <div role="presentation" style="position: relative; outline: none;">
+                      <pre class="CodeMirror-placeholder" style="height: 0px; overflow: visible; direction: ltr;">Instructions:
+
+  1. Paste or drop some code
+
+  2. Hit the button
+
+  3. Sing like no one is listening! 🎤
+
+Your settings will be saved on this device.
+</pre>
+                      <div class="CodeMirror-measure">
+                        <pre><span>xxxxxxxxxx</span></pre>
+                      </div>
+                      <div class="CodeMirror-measure"></div>
+                      <div style="position: relative; z-index: 1;"></div>
+                      <div class="CodeMirror-cursors" style="visibility: hidden;">
+                        <div class="CodeMirror-cursor" style="left: 7.98939px; top: 0px; height: 18.8679px;">&nbsp;
+                        </div>
+                      </div>
+                      <div class="CodeMirror-code" role="presentation" style="">
+                        <div style="position: relative;">
+                          <div class="CodeMirror-gutter-wrapper" style="left: -28.9947px;">
+                            <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1
+                            </div>
+                          </div>
+                          <pre class=" CodeMirror-line "
+                            role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 26px;">
+              </div>
+              <div class="CodeMirror-gutters" style="height: 39px; left: 0.00530434px;">
+                <div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer data-v-1145ea48="">
+        <div data-v-1145ea48="" class="stats">
+          <div data-v-5fd066ec="" data-v-1145ea48="" class="stat is-dark"><small data-v-5fd066ec="" class="label"> mode
+            </small> JS </div>
+          <div data-v-5fd066ec="" data-v-1145ea48="" class="stat is-dark"><small data-v-5fd066ec="" class="label">
+              indent </small> 4 sp </div>
+          <div data-v-5fd066ec="" data-v-1145ea48="" class="stat is-dark"><small data-v-5fd066ec="" class="label"> lines
+            </small> 1 </div>
+          <div data-v-5fd066ec="" data-v-1145ea48="" class="stat is-dark"><small data-v-5fd066ec="" class="label"> chars
+            </small> 0 </div>
+          <div data-v-5fd066ec="" data-v-1145ea48="" class="stat is-dark"><small data-v-5fd066ec="" class="label"> size
+            </small> 0 B </div>
+        </div>
+        <div data-v-1145ea48="" class="credits"><span data-v-1145ea48=""><span data-v-1145ea48=""
+              class="hidden-lg-and-down">Made possible by</span><a data-v-1145ea48="" href="https://www.surrealcms.com/"
+              target="_blank"><img data-v-1145ea48=""
+                src="./Beautify HTML, CSS, and JavaScript _ Surreal CMS_files/wordmark-dark.svg"
+                alt="Surreal CMS logo"></a></span></div>
+        <div data-v-1145ea48="" class="clean"><button data-v-1145ea48="" type="button"
+            class="el-button el-button--info">
+            <!---->
+            <!----><span> Clear </span></button><button data-v-1145ea48="" type="button"
+            class="el-button el-tooltip clean-button el-button--primary" aria-describedby="el-tooltip-764" tabindex="0">
+            <!---->
+            <!----><span>Clean + Copy</span></button><button data-v-1145ea48="" type="button"
+            class="el-button el-tooltip clean-button el-button--primary" aria-describedby="el-tooltip-5303" tabindex="0"
+            style="display: none;">
+            <!---->
+            <!----><span>Clean</span></button></div>
+      </footer>
+      <div data-v-1145ea48="" class="el-dialog__wrapper about-dialog" style="z-index: 2017; display: none;">
+        <div role="dialog" aria-modal="true" aria-label="About" class="el-dialog"
+          style="margin-top: 15vh; width: 500px;">
+          <div class="el-dialog__header"><span class="el-dialog__title">About</span><button type="button"
+              aria-label="Close" class="el-dialog__headerbtn"><i
+                class="el-dialog__close el-icon el-icon-close"></i></button></div>
+          <div class="el-dialog__body">
+            <p data-v-1145ea48=""><a data-v-1145ea48="" href="https://twitter.com/claviska" target="_blank"><img
+                  data-v-1145ea48=""
+                  src="./Beautify HTML, CSS, and JavaScript _ Surreal CMS_files/bf1b3b95fd5b096a3592247c29667b33.jpeg"
+                  alt="Cory LaViska" class="author"></a> This free tool was built by <a data-v-1145ea48=""
+                href="https://twitter.com/claviska" target="_blank">Cory LaViska</a>, creator of <a data-v-1145ea48=""
+                href="https://www.surrealcms.com/" target="_blank">Surreal&nbsp;CMS.</a> Looking for a way to give back
+              to the project? </p>
+            <p data-v-1145ea48=""> → <a data-v-1145ea48="" href="https://twitter.com/claviska" target="_blank">Follow me
+                on Twitter 👋</a><br data-v-1145ea48=""> → <a data-v-1145ea48="" href="https://www.surrealcms.com/"
+                target="_blank">Check out my awesome CMS 😮</a><br data-v-1145ea48=""> → <a data-v-1145ea48=""
+                href="https://paypal.me/claviska" target="_blank">Buy me a coffee! ☕️</a><br data-v-1145ea48=""></p>
+            <p data-v-1145ea48=""> No claims are made to the accuracy, performance, or uptime of this tool. Use at your
+              own risk. No Icelandic horses were harmed in the making of <a data-v-1145ea48=""
+                href="https://unsplash.com/photos/MCauAnBJeig" target="_blank">this Unsplash photo</a>. </p>
+            <p data-v-1145ea48=""> Made in New Hampshire using <a data-v-1145ea48="" href="https://vuejs.org/"
+                target="_blank">Vue.js</a>, <a data-v-1145ea48="" href="https://element.eleme.io/"
+                target="_blank">Element UI</a>, <a data-v-1145ea48="" href="https://codemirror.net/"
+                target="_blank">CodeMirror</a>, <a data-v-1145ea48="" href="https://github.com/beautify-web/js-beautify"
+                target="_blank">JS&nbsp;Beautify</a>, and <a data-v-1145ea48="" href="https://code.visualstudio.com/"
+                target="_blank">VS Code</a>. </p>
+          </div>
+          <div class="el-dialog__footer"><span data-v-1145ea48="" class="dialog-footer"><button data-v-1145ea48=""
+                type="button" class="el-button el-button--primary">
+                <!---->
+                <!----><span>Close</span></button></span></div>
+        </div>
+      </div>
+      <div data-v-1145ea48="" class="el-dialog__wrapper" style="z-index: 2015; display: none;">
+        <div role="dialog" aria-modal="true" aria-label="Advanced Settings" class="el-dialog"
+          style="margin-top: 15vh; width: 500px;">
+          <div class="el-dialog__header"><span class="el-dialog__title">Advanced Settings</span><button type="button"
+              aria-label="Close" class="el-dialog__headerbtn"><i
+                class="el-dialog__close el-icon el-icon-close"></i></button></div>
+          <div class="el-dialog__body">
+            <form data-v-1145ea48="" class="el-form">
+              <div data-v-1145ea48="" class="el-tabs el-tabs--left">
+                <div class="el-tabs__header is-left">
+                  <div class="el-tabs__nav-wrap is-left">
+                    <div class="el-tabs__nav-scroll">
+                      <div role="tablist" class="el-tabs__nav is-left" style="transform: translateY(0px);">
+                        <div class="el-tabs__active-bar is-left" style="height: 0px; transform: translateY(0px);"></div>
+                        <div id="tab-html" aria-controls="pane-html" role="tab" tabindex="-1"
+                          class="el-tabs__item is-left">HTML</div>
+                        <div id="tab-css" aria-controls="pane-css" role="tab" tabindex="-1"
+                          class="el-tabs__item is-left">CSS</div>
+                        <div id="tab-js" aria-controls="pane-js" role="tab" tabindex="-1" class="el-tabs__item is-left">
+                          JavaScript</div>
+                        <div id="tab-shortcuts" aria-controls="pane-shortcuts" role="tab" tabindex="0"
+                          class="el-tabs__item is-left is-active" aria-selected="true">Shortcuts</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="el-tabs__content">
+                  <div data-v-1145ea48="" role="tabpanel" id="pane-html" aria-labelledby="tab-html" class="el-tab-pane"
+                    aria-hidden="true" style="display: none;">
+                    <div data-v-1145ea48="" class="el-form-item"><label class="el-form-item__label">Indent
+                        scripts</label>
+                      <div class="el-form-item__content">
+                        <div data-v-1145ea48="" class="el-select el-select--small">
+                          <!---->
+                          <div class="el-input el-input--small el-input--suffix">
+                            <!----><input type="text" readonly="readonly" autocomplete="off" placeholder=""
+                              class="el-input__inner">
+                            <!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i
+                                  class="el-select__caret el-input__icon el-icon-arrow-up"></i>
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!----></span>
+                              <!----></span>
+                            <!---->
+                            <!---->
+                          </div>
+                          <div class="el-select-dropdown el-popper" style="display: none; min-width: 0px;">
+                            <div class="el-scrollbar" style="">
+                              <div class="el-select-dropdown__wrap el-scrollbar__wrap"
+                                style="margin-bottom: -17px; margin-right: -17px;">
+                                <ul class="el-scrollbar__view el-select-dropdown__list">
+                                  <!---->
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item selected"><span>Normal</span>
+                                  </li>
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item"><span>Keep</span></li>
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item"><span>Indent</span></li>
+                                </ul>
+                              </div>
+                              <div class="el-scrollbar__bar is-horizontal">
+                                <div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+                              </div>
+                              <div class="el-scrollbar__bar is-vertical">
+                                <div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div>
+                              </div>
+                            </div>
+                            <!---->
+                          </div>
+                        </div>
+                        <!---->
+                      </div>
+                    </div>
+                    <div data-v-1145ea48="" class="el-form-item"><label class="el-form-item__label">Wrap
+                        attributes</label>
+                      <div class="el-form-item__content">
+                        <div data-v-1145ea48="" class="el-select el-select--small">
+                          <!---->
+                          <div class="el-input el-input--small el-input--suffix">
+                            <!----><input type="text" readonly="readonly" autocomplete="off" placeholder=""
+                              class="el-input__inner">
+                            <!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i
+                                  class="el-select__caret el-input__icon el-icon-arrow-up"></i>
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!----></span>
+                              <!----></span>
+                            <!---->
+                            <!---->
+                          </div>
+                          <div class="el-select-dropdown el-popper" style="display: none; min-width: 0px;">
+                            <div class="el-scrollbar" style="">
+                              <div class="el-select-dropdown__wrap el-scrollbar__wrap"
+                                style="margin-bottom: -17px; margin-right: -17px;">
+                                <ul class="el-scrollbar__view el-select-dropdown__list">
+                                  <!---->
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item selected"><span>Auto</span>
+                                  </li>
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item"><span>Force</span></li>
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item"><span>Force aligned</span>
+                                  </li>
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item"><span>Force expand
+                                      multiline</span></li>
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item"><span>Aligned multiple</span>
+                                  </li>
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item"><span>Preserve</span></li>
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item"><span>Preserve aligned</span>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="el-scrollbar__bar is-horizontal">
+                                <div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+                              </div>
+                              <div class="el-scrollbar__bar is-vertical">
+                                <div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div>
+                              </div>
+                            </div>
+                            <!---->
+                          </div>
+                        </div>
+                        <!---->
+                      </div>
+                    </div><label data-v-1145ea48="" role="checkbox" class="el-checkbox"><span aria-checked="mixed"
+                        class="el-checkbox__input"><span class="el-checkbox__inner"></span><input type="checkbox"
+                          aria-hidden="true" class="el-checkbox__original" value=""></span><span
+                        class="el-checkbox__label">Preserve newlines
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Indent head and
+                        body
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Indent empty
+                        lines
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">End with
+                        newline
+                        <!----></span></label>
+                  </div>
+                  <div data-v-1145ea48="" role="tabpanel" aria-hidden="true" id="pane-css" aria-labelledby="tab-css"
+                    class="el-tab-pane" style="display: none;"><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Newline between
+                        selectors
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Newline between
+                        rules
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Indent empty
+                        lines
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">End with
+                        newline
+                        <!----></span></label></div>
+                  <div data-v-1145ea48="" role="tabpanel" id="pane-js" aria-labelledby="tab-js" class="el-tab-pane"
+                    style="display: none;" aria-hidden="true">
+                    <div data-v-1145ea48="" class="el-form-item"><label class="el-form-item__label">Brace style</label>
+                      <div class="el-form-item__content">
+                        <div data-v-1145ea48="" class="el-select el-select--small">
+                          <!---->
+                          <div class="el-input el-input--small el-input--suffix">
+                            <!----><input type="text" readonly="readonly" autocomplete="off" placeholder=""
+                              class="el-input__inner">
+                            <!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i
+                                  class="el-select__caret el-input__icon el-icon-arrow-up"></i>
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!----></span>
+                              <!----></span>
+                            <!---->
+                            <!---->
+                          </div>
+                          <div class="el-select-dropdown el-popper" style="display: none; min-width: 0px;">
+                            <div class="el-scrollbar" style="">
+                              <div class="el-select-dropdown__wrap el-scrollbar__wrap"
+                                style="margin-bottom: -17px; margin-right: -17px;">
+                                <ul class="el-scrollbar__view el-select-dropdown__list">
+                                  <!---->
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item selected"><span>Collapse +
+                                      preserve inline</span></li>
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item"><span>Collapse</span></li>
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item"><span>Expand</span></li>
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item"><span>End expand</span></li>
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item"><span>None</span></li>
+                                </ul>
+                              </div>
+                              <div class="el-scrollbar__bar is-horizontal">
+                                <div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+                              </div>
+                              <div class="el-scrollbar__bar is-vertical">
+                                <div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div>
+                              </div>
+                            </div>
+                            <!---->
+                          </div>
+                        </div>
+                        <!---->
+                      </div>
+                    </div>
+                    <div data-v-1145ea48="" class="el-form-item"><label class="el-form-item__label">Operator
+                        position</label>
+                      <div class="el-form-item__content">
+                        <div data-v-1145ea48="" class="el-select el-select--small">
+                          <!---->
+                          <div class="el-input el-input--small el-input--suffix">
+                            <!----><input type="text" readonly="readonly" autocomplete="off" placeholder=""
+                              class="el-input__inner">
+                            <!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i
+                                  class="el-select__caret el-input__icon el-icon-arrow-up"></i>
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!----></span>
+                              <!----></span>
+                            <!---->
+                            <!---->
+                          </div>
+                          <div class="el-select-dropdown el-popper" style="display: none; min-width: 0px;">
+                            <div class="el-scrollbar" style="">
+                              <div class="el-select-dropdown__wrap el-scrollbar__wrap"
+                                style="margin-bottom: -17px; margin-right: -17px;">
+                                <ul class="el-scrollbar__view el-select-dropdown__list">
+                                  <!---->
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item selected"><span>Before
+                                      newline</span></li>
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item"><span>After newline</span>
+                                  </li>
+                                  <li data-v-1145ea48="" class="el-select-dropdown__item"><span>Preserve newline</span>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="el-scrollbar__bar is-horizontal">
+                                <div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+                              </div>
+                              <div class="el-scrollbar__bar is-vertical">
+                                <div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div>
+                              </div>
+                            </div>
+                            <!---->
+                          </div>
+                        </div>
+                        <!---->
+                      </div>
+                    </div><label data-v-1145ea48="" role="checkbox" class="el-checkbox"><span aria-checked="mixed"
+                        class="el-checkbox__input"><span class="el-checkbox__inner"></span><input type="checkbox"
+                          aria-hidden="true" class="el-checkbox__original" value=""></span><span
+                        class="el-checkbox__label">Preserve newlines
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Space in parens
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Space in empty
+                        parens
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Space before
+                        anonymous function parens
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Space before
+                        named function parens
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Don’t indent
+                        chained methods
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Break chained
+                        methods across lines
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Preserve array
+                        indentation
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Decode
+                        printable chars
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Commas at
+                        beginning of newlines
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">Indent empty
+                        lines
+                        <!----></span></label><br data-v-1145ea48=""><label data-v-1145ea48="" role="checkbox"
+                      class="el-checkbox"><span aria-checked="mixed" class="el-checkbox__input"><span
+                          class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="true"
+                          class="el-checkbox__original" value=""></span><span class="el-checkbox__label">End with
+                        newline
+                        <!----></span></label>
+                  </div>
+                  <div data-v-1145ea48="" role="tabpanel" id="pane-shortcuts" aria-labelledby="tab-shortcuts"
+                    class="el-tab-pane" style="">
+                    <table data-v-1145ea48="" class="table">
+                      <tbody data-v-1145ea48="">
+                        <tr data-v-1145ea48="">
+                          <td data-v-1145ea48=""><kbd data-v-1145ea48="">Shift</kbd><kbd
+                              data-v-1145ea48="">Ctrl</kbd><kbd data-v-1145ea48="">H</kbd></td>
+                          <td data-v-1145ea48="">HTML mode</td>
+                        </tr>
+                        <tr data-v-1145ea48="">
+                          <td data-v-1145ea48=""><kbd data-v-1145ea48="">Shift</kbd><kbd
+                              data-v-1145ea48="">Ctrl</kbd><kbd data-v-1145ea48="">C</kbd></td>
+                          <td data-v-1145ea48="">CSS mode</td>
+                        </tr>
+                        <tr data-v-1145ea48="">
+                          <td data-v-1145ea48=""><kbd data-v-1145ea48="">Shift</kbd><kbd
+                              data-v-1145ea48="">Ctrl</kbd><kbd data-v-1145ea48="">J</kbd></td>
+                          <td data-v-1145ea48="">JavaScript mode</td>
+                        </tr>
+                        <tr data-v-1145ea48="">
+                          <td data-v-1145ea48=""><kbd data-v-1145ea48="">Shift</kbd><kbd
+                              data-v-1145ea48="">Ctrl</kbd><kbd data-v-1145ea48="">↵</kbd></td>
+                          <td data-v-1145ea48="">Clean</td>
+                        </tr>
+                        <tr data-v-1145ea48="">
+                          <td data-v-1145ea48=""><kbd data-v-1145ea48="">Shift</kbd><kbd
+                              data-v-1145ea48="">Ctrl</kbd><kbd data-v-1145ea48="">⌫</kbd></td>
+                          <td data-v-1145ea48="">Clear</td>
+                        </tr>
+                        <tr data-v-1145ea48="">
+                          <td data-v-1145ea48=""><kbd data-v-1145ea48="">Ctrl</kbd><kbd data-v-1145ea48="">,</kbd></td>
+                          <td data-v-1145ea48="">Settings</td>
+                        </tr>
+                        <tr data-v-1145ea48="">
+                          <td data-v-1145ea48=""><kbd data-v-1145ea48="">Shift</kbd><kbd
+                              data-v-1145ea48="">Ctrl</kbd><kbd data-v-1145ea48="">,</kbd></td>
+                          <td data-v-1145ea48="">Advanced Settings</td>
+                        </tr>
+                        <tr data-v-1145ea48="">
+                          <td data-v-1145ea48=""><kbd data-v-1145ea48="">Ctrl</kbd><kbd data-v-1145ea48="">/</kbd></td>
+                          <td data-v-1145ea48="">Warm <a data-v-1145ea48="" href="https://twitter.com/staringatlights"
+                              target="_blank">Andrew’s</a> heart with a rooftop dance party</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="el-dialog__footer"><span data-v-1145ea48="" class="dialog-footer"><button data-v-1145ea48=""
+                type="button" class="el-button el-button--primary">
+                <!---->
+                <!----><span>Close</span></button></span></div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script>
+    window.ga = window.ga || function() {
+      (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
+    ga('create', 'UA-6412891-3', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async="" src="./Beautify HTML, CSS, and JavaScript _ Surreal CMS_files/analytics.js.download"></script>
+  <script src="./Beautify HTML, CSS, and JavaScript _ Surreal CMS_files/chunk-vendors.9b6ad6f2.js.download"></script>
+  <script src="./Beautify HTML, CSS, and JavaScript _ Surreal CMS_files/app.0c939182.js.download"></script><input
+    type="file" id="" name="file" style="display: none;">
+  <div data-v-cef78672="" class="container_selected_area"
+    style="cursor: url(&quot;chrome-extension://ialiedlpfknneamnbemcgmaboleiccdd/assets/images/cursor-imagen.svg&quot;) 9 9, crosshair;">
+    <div data-v-cef78672="" class="area"></div>
+  </div>
+  <div role="tooltip" id="el-tooltip-764" aria-hidden="true" class="el-tooltip__popper is-light"
+    style="transform-origin: center bottom; z-index: 2011; display: none;">Cleaned &amp; copied!<div x-arrow=""
+      class="popper__arrow" style="left: 54px;"></div>
+  </div>
+  <div role="tooltip" id="el-popover-4699" aria-hidden="true" class="el-popover el-popper settings-popover" tabindex="0"
+    style="width: 460px; transform-origin: center top; z-index: 2013; display: none;">
+    <!---->
+    <form data-v-1145ea48="" class="el-form">
+      <div data-v-1145ea48="" class="settings-row el-row" style="margin-left: -10px; margin-right: -10px;">
+        <div data-v-1145ea48=""
+          class="el-col el-col-24 el-col-xs-24 el-col-sm-24 el-col-md-12 el-col-lg-12 el-col-xl-12"
+          style="padding-left: 10px; padding-right: 10px;">
+          <div data-v-1145ea48="" role="switch" aria-checked="true" class="el-switch is-checked"><input type="checkbox"
+              name="" true-value="true" class="el-switch__input">
+            <!----><span class="el-switch__core" style="width: 40px;"></span><span
+              class="el-switch__label el-switch__label--right is-active">
+              <!----><span>Dark theme</span></span></div><br data-v-1145ea48="">
+          <div data-v-1145ea48="" role="switch" aria-checked="true" class="el-switch is-checked"><input type="checkbox"
+              name="" true-value="true" class="el-switch__input">
+            <!----><span class="el-switch__core" style="width: 40px;"></span><span
+              class="el-switch__label el-switch__label--right is-active">
+              <!----><span>Line numbers</span></span></div><br data-v-1145ea48="">
+          <div data-v-1145ea48="" role="switch" aria-checked="true" class="el-switch is-checked"><input type="checkbox"
+              name="" true-value="true" class="el-switch__input">
+            <!----><span class="el-switch__core" style="width: 40px;"></span><span
+              class="el-switch__label el-switch__label--right is-active">
+              <!----><span>Wrap lines</span></span></div><br data-v-1145ea48="">
+          <div data-v-1145ea48="" role="switch" aria-checked="true" class="el-switch is-checked"><input type="checkbox"
+              name="" true-value="true" class="el-switch__input">
+            <!----><span class="el-switch__core" style="width: 40px;"></span><span
+              class="el-switch__label el-switch__label--right is-active">
+              <!----><span>Highlight brackets</span></span></div><br data-v-1145ea48="">
+          <div data-v-1145ea48="" role="switch" aria-checked="true" class="el-switch is-checked"><input type="checkbox"
+              name="" true-value="true" class="el-switch__input">
+            <!----><span class="el-switch__core" style="width: 40px;"></span><span
+              class="el-switch__label el-switch__label--right is-active">
+              <!----><span>Detect indent on paste</span></span></div><br data-v-1145ea48="">
+          <div data-v-1145ea48="" role="switch" aria-checked="true" class="el-switch is-checked"><input type="checkbox"
+              name="" true-value="true" class="el-switch__input">
+            <!----><span class="el-switch__core" style="width: 40px;"></span><span
+              class="el-switch__label el-switch__label--right is-active">
+              <!----><span>Copy after cleaning</span></span></div>
+        </div>
+        <div data-v-1145ea48=""
+          class="el-col el-col-24 el-col-xs-24 el-col-sm-24 el-col-md-12 el-col-lg-12 el-col-xl-12"
+          style="padding-left: 10px; padding-right: 10px;">
+          <div data-v-1145ea48="" class="el-form-item"><label class="el-form-item__label">Font size</label>
+            <div class="el-form-item__content">
+              <div data-v-1145ea48="" class="el-select el-select--small">
+                <!---->
+                <div class="el-input el-input--small el-input--suffix">
+                  <!----><input type="text" readonly="readonly" autocomplete="off" placeholder=""
+                    class="el-input__inner">
+                  <!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i
+                        class="el-select__caret el-input__icon el-icon-arrow-up"></i>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----></span>
+                    <!----></span>
+                  <!---->
+                  <!---->
+                </div>
+                <div class="el-select-dropdown el-popper" style="display: none; min-width: 0px;">
+                  <div class="el-scrollbar" style="">
+                    <div class="el-select-dropdown__wrap el-scrollbar__wrap"
+                      style="margin-bottom: -17px; margin-right: -17px;">
+                      <ul class="el-scrollbar__view el-select-dropdown__list">
+                        <!---->
+                        <li data-v-1145ea48="" class="el-select-dropdown__item"><span>Small</span></li>
+                        <li data-v-1145ea48="" class="el-select-dropdown__item selected"><span>Medium</span></li>
+                        <li data-v-1145ea48="" class="el-select-dropdown__item"><span>Large</span></li>
+                      </ul>
+                    </div>
+                    <div class="el-scrollbar__bar is-horizontal">
+                      <div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+                    </div>
+                    <div class="el-scrollbar__bar is-vertical">
+                      <div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div>
+                    </div>
+                  </div>
+                  <!---->
+                </div>
+              </div>
+              <!---->
+            </div>
+          </div>
+          <div data-v-1145ea48="" class="el-form-item"><label class="el-form-item__label">Indent</label>
+            <div class="el-form-item__content">
+              <div data-v-1145ea48="" class="el-select el-select--small">
+                <!---->
+                <div class="el-input el-input--small el-input--suffix">
+                  <!----><input type="text" readonly="readonly" autocomplete="off" placeholder=""
+                    class="el-input__inner">
+                  <!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i
+                        class="el-select__caret el-input__icon el-icon-arrow-up"></i>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!----></span>
+                    <!----></span>
+                  <!---->
+                  <!---->
+                </div>
+                <div class="el-select-dropdown el-popper" style="display: none; min-width: 0px;">
+                  <div class="el-scrollbar" style="">
+                    <div class="el-select-dropdown__wrap el-scrollbar__wrap"
+                      style="margin-bottom: -17px; margin-right: -17px;">
+                      <ul class="el-scrollbar__view el-select-dropdown__list">
+                        <!---->
+                        <li data-v-1145ea48="" class="el-select-dropdown__item"><span>Tabs</span></li>
+                        <li data-v-1145ea48="" class="el-select-dropdown__item"><span>2 spaces</span></li>
+                        <li data-v-1145ea48="" class="el-select-dropdown__item"><span>3 spaces</span></li>
+                        <li data-v-1145ea48="" class="el-select-dropdown__item selected"><span>4 spaces</span></li>
+                      </ul>
+                    </div>
+                    <div class="el-scrollbar__bar is-horizontal">
+                      <div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+                    </div>
+                    <div class="el-scrollbar__bar is-vertical">
+                      <div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div>
+                    </div>
+                  </div>
+                  <!---->
+                </div>
+              </div>
+              <!---->
+            </div>
+          </div>
+          <div data-v-1145ea48="" class="el-form-item"><label class="el-form-item__label">Preferred line length</label>
+            <div class="el-form-item__content">
+              <div data-v-1145ea48="" class="el-input el-input--small">
+                <!----><input type="number" autocomplete="off" min="0" max="1000" step="10" class="el-input__inner">
+                <!---->
+                <!---->
+                <!---->
+                <!---->
+              </div>
+              <!---->
+            </div>
+          </div><button data-v-1145ea48="" type="button" class="el-button el-button--text el-button--small">
+            <!---->
+            <!----><span> Advanced Settings… </span></button>
+        </div>
+      </div>
+    </form>
+    <div x-arrow="" class="popper__arrow" style="left: 261.627px;"></div>
+  </div>
+</body>
+</html>
